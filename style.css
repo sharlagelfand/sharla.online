@@ -119,6 +119,8 @@ a:hover {
   border-top-left-radius: var(--window-radius);
   border-top-right-radius: var(--window-radius);
   position: relative; 
+  display: flex;
+  align-items: center;
 }
 
 .window {
@@ -134,8 +136,9 @@ a:hover {
 
 .dots {
   position: absolute;
-  top: 5.5px;
   left: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .dot {
@@ -144,6 +147,7 @@ a:hover {
   border-radius: 50%;
   box-sizing: content-box;
   display: inline-block;
+  margin-right: 5px;
 }
 
 .dot:hover {
@@ -175,7 +179,7 @@ a:hover {
 .tabs {
   position: absolute;
   top: 5.5px;
-  left: 90px;
+  left: 80px;
 }
 
 .tablink {  
