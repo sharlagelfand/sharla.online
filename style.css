@@ -262,6 +262,7 @@ a:hover {
 
 .browser a,
 .browser a:visited {
+  font-size: 0.8em;
   color: var(--white);
   text-decoration: none;
 }
