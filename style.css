@@ -284,7 +284,7 @@ a:hover {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .computer {
-    width: 100vw;
+    width: calc(100vw - 25px);
   }
   
   .computer-screen {
