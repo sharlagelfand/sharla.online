@@ -73,6 +73,15 @@ a:hover {
   font-family: var(--font-text);
 }
 
+.title {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.logos {
+  margin-left: 20px;
+}
+
 /* Column layout */
 
 .columns {
@@ -88,12 +97,8 @@ a:hover {
   margin: 20px;
 }
 
-.width-third {
-  width: 33%;
-}
-
-.width-half {
-  width: 50%;
+.width-forty {
+  width: 40%;
 }
 
 /* Window panes */
@@ -194,7 +199,7 @@ a:hover {
 
 .browser {
   border-color: var(--purple-dark);
-  background-color: var(--off-white);
+  background-color: var(--white);
 }
 
 .browser .dot:hover {
@@ -262,6 +267,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.browser img, .browser iframe {
+  width: 100%;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .computer {
@@ -272,8 +281,8 @@ a:hover {
     margin-top: 25px;
   }
   
-  .column {
-    width: 95% !important;
+  .width-forty {
+    width: 100%;
   }
   
   body {
