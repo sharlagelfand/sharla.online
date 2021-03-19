@@ -235,7 +235,7 @@ a:hover {
 .url-bar {
   background-color: var(--blurple);
   width: 95%;
-  height: 35px;
+  min-height: 35px;
   margin: auto;
   display: flex;
   align-items: center;
