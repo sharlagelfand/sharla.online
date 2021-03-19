@@ -48,6 +48,10 @@ a:hover {
   color: var(--text-color);
 }
 
+.long-url {
+  word-break: break-all;
+}
+
 /* Setup computer and screen */
 
 .computer {
@@ -329,9 +333,5 @@ a:hover {
 
   .tablink {
     max-width: 15vw;
-  }
-
-  .long-url {
-    word-break: break-all;
   }
 }
