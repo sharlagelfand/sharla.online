@@ -40,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-.long-url {
-  word-break: break-all;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -68,15 +64,12 @@ a:hover {
   min-height: 1000px;
   background-color: var(--blurple);
   margin: auto;
-  border-radius: 50px;
 }
 
 .computer-toolbar {
   width: 100%;
   background-color: var(--purple-light);
   display: flex;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
   align-items: center;
   font-family: var(--font-text);
 }
@@ -336,5 +329,9 @@ a:hover {
 
   .tablink {
     max-width: 15vw;
+  }
+
+  .long-url {
+    word-break: break-all;
   }
 }
