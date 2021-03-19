@@ -88,13 +88,16 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .width-forty {
@@ -279,6 +282,7 @@ a:hover {
   
   .computer-screen {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
   
   .width-forty {
