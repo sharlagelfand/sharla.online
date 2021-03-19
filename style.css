@@ -87,6 +87,11 @@ a:hover {
   margin-left: 20px;
 }
 
+.logos > img {
+  height: 32px;
+  width: 32px;
+}
+
 /* Column layout */
 
 .columns {
@@ -152,8 +157,35 @@ a:hover {
   box-sizing: border-box;
 }
 
+.dot-exit {
+  display: flex;
+  align-items: center;
+}
+
 .exit {
   background-color: var(--color-dot-exit);
+}
+
+
+
+.tooltip {
+  visibility: hidden;
+  width: 60px;
+  background-color: var(--blurple);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.dot-exit:hover .tooltip {
+  visibility: visible;
+  top: 130%;
+  left: 50%;
+  margin-left: -35px;
 }
 
 .minimize {
@@ -335,3 +367,5 @@ a:hover {
     max-width: 15vw;
   }
 }
+
+/* Sandbox */
