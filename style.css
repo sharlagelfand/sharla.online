@@ -24,6 +24,8 @@
   --color-code-parentheses: #ed90a4;
   --color-code-line-number: #aba8b2;
   --color-code-comment: var(--blurple);
+
+  --window-radius: 20px;
 }
 
 /* Fonts */
@@ -112,28 +114,41 @@ a:hover {
 
 /* Window panes */
 
+.window-top {
+  height: 30px;
+  border-top-left-radius: var(--window-radius);
+  border-top-right-radius: var(--window-radius);
+  position: relative; 
+}
+
 .window {
-  border-radius: 20px;
+  border-bottom-left-radius: var(--window-radius);
+  border-bottom-right-radius: var(--window-radius);
   border: 5px solid;
-  border-top: 30px solid;
+  border-top: none;
   background-color: var(--purple-dark);
   word-wrap: break-word;
   margin-bottom: 10px;
   position: relative;
 }
 
-.dot {
+.dots {
   position: absolute;
-  top: -22.5px;
-  left: 10px;
+  top: 5.5px;
+  left: 12px;
+}
+
+.dot {
   height: 15px;
   width: 15px;
   border-radius: 50%;
+  box-sizing: content-box;
   display: inline-block;
 }
 
 .dot:hover {
   border: 1px solid;
+  box-sizing: border-box;
 }
 
 .exit {
@@ -151,21 +166,51 @@ a:hover {
 }
 
 .window-title {
-  position: absolute;
-  top: -22.5px;
   display: inline-block;
-  right: 0%;
-  margin-right: 10px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tabs {
+  position: absolute;
+  top: 5.5px;
+  left: 90px;
+}
+
+.tablink {  
+  height: 27px;
+  width: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid var(--purple-light);
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-code);
+}
+
+.tablink:hover, .tablink.active:hover {
+  background-color: var(--blurple);
+  border-color: var(--blurple);
+  text-decoration: underline;
+}
+
+.tablink.active {
+  background-color: var(--purple-light);
 }
 
 /* RStudio */
+
+.rstudio-top {
+  background-color: var(--purple-light); 
+}
 
 .rstudio {
   border-color: var(--purple-light);
   background-color: var(--purple-dark);
 }
 
-.rstudio .dot:hover {
+.rstudio-top .dot:hover {
   border-color: var(--purple-light);
 }
 
@@ -206,36 +251,17 @@ a:hover {
 
 /* Browser */
 
+.browser-top {
+  background-color: var(--purple-dark); 
+}
+
 .browser {
   border-color: var(--purple-dark);
   background-color: var(--white);
 }
 
-.browser .dot:hover {
+.browser-top .dot:hover {
   border-color: var(--purple-dark);
-}
-
-.tablink {  
-  position: absolute;
-  top: -25px;
-  height: 27px;
-  width: 100px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border: 2px solid var(--purple-light);
-  background-color: transparent;
-  color: var(--white);
-  font-family: var(--font-code);
-}
-
-.tablink:hover, .tablink.active:hover {
-  background-color: var(--blurple);
-  border-color: var(--blurple);
-  text-decoration: underline;
-}
-
-.tablink.active {
-  background-color: var(--purple-light);
 }
 
 .toolbar {
