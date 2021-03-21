@@ -28,6 +28,10 @@
   --window-radius: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Fonts */
 
 body {
@@ -107,11 +111,18 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .width-forty {
-  width: 40%;
+  width: calc(40% - 20px);
+}
+
+.width-forty-five {
+  width: calc(45% - 20px);
+}
+
+.width-fifteen {
+  width: calc(15% - 40px);
 }
 
 /* Window panes */
@@ -355,6 +366,14 @@ a:hover {
     width: 100%;
   }
   
+  .width-forty-five {
+    width: 100%;
+  }
+  
+  .width-fifteen {
+    width: 50%;
+  }
+  
   body {
     font-size: 12px;
   }
@@ -369,3 +388,16 @@ a:hover {
 }
 
 /* Sandbox */
+
+.desktop-icon {
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+  height: 200px;
+  text-align: center;
+  color: var(--purple-dark);
+}
+
+.desktop-icon-text {
+  text-align: center;
+}
