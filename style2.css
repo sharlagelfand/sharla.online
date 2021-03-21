@@ -1,0 +1,403 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Set variables */
+
+:root {
+  --font-code: Monaco, monospace;
+  --font-text: 'Josefin Sans', sans-serif;
+
+  --white: white;
+  --off-white: #fff4d7;
+  --purple-dark: #C84630;
+  --purple-light: #E87B3C;
+  --blurple: #FFA7A7;
+
+  --text-color: var(--purple-dark);
+
+  --color-dot-exit: #FFA7A7;
+  --color-dot-minimize: #FFC531;
+  --color-dot-full: #ADCB00;
+
+  --color-code-library: #ADCB00;
+  --color-code-string: #FFC531;
+  --color-code-parentheses: #E87B3C;
+  --color-code-line-number: #FFA7A7;
+  --color-code-comment: var(--off-white);
+
+  --window-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+
+body {
+  color: var(--white);
+  font-family: var(--font-code);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.long-url {
+  word-break: break-all;
+}
+
+/* Setup computer and screen */
+
+.computer {
+  max-width: 1400px;
+  min-height: 1100px;
+  background-color: var(--purple-dark);
+  border-radius: 50px;
+  margin: auto;
+  display: flex;
+}
+
+.computer-screen {
+  width: calc(100% - 50px);
+  min-height: 1000px;
+  background-color: var(--blurple);
+  margin: auto;
+}
+
+.computer-toolbar {
+  width: 100%;
+  background-color: var(--purple-light);
+  display: flex;
+  align-items: center;
+  font-family: var(--font-text);
+}
+
+.title {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.logos {
+  margin-left: 20px;
+}
+
+.logos > img {
+  height: 32px;
+  width: 32px;
+}
+
+/* Column layout */
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.width-forty {
+  width: calc(40% - 20px);
+}
+
+.width-forty-five {
+  width: calc(45% - 20px);
+}
+
+.width-fifteen {
+  width: calc(15% - 40px);
+}
+
+/* Window panes */
+
+.window-top {
+  height: 30px;
+  border-top-left-radius: var(--window-radius);
+  border-top-right-radius: var(--window-radius);
+  position: relative; 
+  display: flex;
+  align-items: center;
+}
+
+.window {
+  border-bottom-left-radius: var(--window-radius);
+  border-bottom-right-radius: var(--window-radius);
+  border: 5px solid;
+  border-top: none;
+  background-color: var(--purple-dark);
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dot:hover {
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.dot-exit {
+  display: flex;
+  align-items: center;
+}
+
+.exit {
+  background-color: var(--color-dot-exit);
+}
+
+
+
+.tooltip {
+  visibility: hidden;
+  width: 60px;
+  background-color: var(--blurple);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.dot-exit:hover .tooltip {
+  visibility: visible;
+  top: 130%;
+  left: 50%;
+  margin-left: -35px;
+}
+
+.minimize {
+  background-color: var(--color-dot-minimize);
+  left: 30px;
+}
+
+.full {
+  background-color: var(--color-dot-full);
+  left: 50px;
+}
+
+.window-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tabs {
+  position: absolute;
+  top: 5.5px;
+  left: 80px;
+}
+
+.tablink {  
+  height: 27px;
+  width: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid var(--purple-light);
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-code);
+}
+
+.tablink:hover, .tablink.active:hover {
+  background-color: var(--blurple);
+  border-color: var(--blurple);
+  text-decoration: underline;
+}
+
+.tablink.active {
+  background-color: var(--purple-light);
+}
+
+/* RStudio */
+
+.rstudio-top {
+  background-color: var(--purple-light); 
+}
+
+.rstudio {
+  border-color: var(--purple-light);
+  background-color: var(--purple-dark);
+}
+
+.rstudio-top .dot:hover {
+  border-color: var(--purple-light);
+}
+
+.rstudio a {
+  text-decoration: underline;
+}
+
+.source {
+  display: flex;
+  margin: 20px;
+  cursor: text;
+}
+
+.string {
+  color: var(--color-code-string);
+}
+
+.library {
+  color: var(--color-code-library);
+}
+
+.parentheses {
+  color: var(--color-code-parentheses);
+}
+
+.line-number {
+  color: var(--color-code-line-number);
+}
+
+.comment, .comment > a {
+  color: var(--color-code-comment);
+}
+
+.rstudio-content {
+  padding-left: 22px;
+  text-indent: -22px;
+}
+
+/* Browser */
+
+.browser-top {
+  background-color: var(--purple-dark); 
+}
+
+.browser {
+  border-color: var(--purple-dark);
+  background-color: var(--white);
+}
+
+.browser-top .dot:hover {
+  border-color: var(--purple-dark);
+}
+
+.toolbar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--purple-light);
+  display: flex;
+  align-items: center;
+}
+
+.url-bar {
+  background-color: var(--blurple);
+  width: 95%;
+  min-height: 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.url {
+  padding-left: 10px;
+}
+
+.page {
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.browser a,
+.browser a:visited {
+  font-size: 0.8em;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.browser a:hover {
+  text-decoration: underline;
+}
+
+.browser img, .browser iframe {
+  width: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .computer {
+    width: calc(100vw - 25px);
+  }
+  
+  .computer-screen {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .width-forty {
+    width: 100%;
+  }
+  
+  .width-forty-five {
+    width: 100%;
+  }
+  
+  .width-fifteen {
+    width: 50%;
+  }
+  
+  body {
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .tablink {
+    max-width: 15vw;
+  }
+}
+
+/* Sandbox */
+
+.desktop-icon {
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+  height: 200px;
+  text-align: center;
+  color: var(--purple-dark);
+}
+
+.desktop-icon-text {
+  text-align: center;
+}
