@@ -74,7 +74,9 @@ a:hover {
 }
 
 .long-url {
-  word-break: break-all;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Setup computer and screen */
