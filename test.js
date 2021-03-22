@@ -86,3 +86,19 @@ function toggleTheme() {
 (function () {
   setTheme('theme-dark');
 })();
+
+// Open modals
+function openModal(modalName) {
+  document.getElementById("other-projects-modal").style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+function closeModal(modalName) {
+  document.getElementById("other-projects-modal").style.display = "none";
+}
