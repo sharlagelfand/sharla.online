@@ -119,6 +119,10 @@ a:hover {
   width: 45px;
 }
 
+.logos img:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Column layout */
 
 .columns {
