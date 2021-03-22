@@ -7,6 +7,12 @@
   --font-code: Monaco, monospace;
   --font-text: 'Josefin Sans', sans-serif;
 
+  --window-radius: 20px;
+}
+
+/* Themes */
+
+.theme-dark {
   --white: white;
   --off-white: #F9F8F8;
   --purple-dark: #2c2a4a;
@@ -24,13 +30,28 @@
   --color-code-parentheses: #ed90a4;
   --color-code-line-number: #aba8b2;
   --color-code-comment: var(--blurple);
-
-  --window-radius: 20px;
 }
 
-* {
-  box-sizing: border-box;
+.theme-light {
+  --white: white;
+  --off-white: #fff4d7;
+  --purple-dark: #C84630;
+  --purple-light: #E87B3C;
+  --blurple: #FFA7A7;
+
+  --text-color: var(--purple-dark);
+
+  --color-dot-exit: #FFA7A7;
+  --color-dot-minimize: #FFC531;
+  --color-dot-full: #ADCB00;
+
+  --color-code-library: #ADCB00;
+  --color-code-string: #FFC531;
+  --color-code-parentheses: #E87B3C;
+  --color-code-line-number: #FFA7A7;
+  --color-code-comment: var(--off-white);
 }
+
 
 /* Fonts */
 
