@@ -371,7 +371,7 @@ a:hover {
   }
   
   .width-fifteen {
-    width: 50%;
+    width: 25%;
   }
   
   body {
@@ -393,11 +393,18 @@ a:hover {
   background-color: var(--white);
   border: none;
   border-radius: 10px;
-  height: 200px;
-  text-align: center;
+  height: 175px;
   color: var(--purple-dark);
+  position: relative;
 }
 
 .desktop-icon-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.desktop-icon-filename {
   text-align: center;
 }
