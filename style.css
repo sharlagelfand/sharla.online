@@ -384,6 +384,10 @@ a:hover {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+
+  .column {
+    margin-right: 20px;
+  }
   
   .width-forty {
     width: 100%;
