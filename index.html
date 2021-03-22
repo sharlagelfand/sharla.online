@@ -113,23 +113,6 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="other-projects-modal">
-            <div class="modal-content">
-              <div class="window-top browser-top">
-                <div class="dots">
-                  <div class="dot-exit">
-                    <span class="dot exit" onClick="closeModal('other-projects')"></span>
-                  </div>
-                </div>
-                <span class="window-title">other projects</span>
-              </div>
-              <div class="window browser" style="background-color: rgba(255, 255, 255, 0.75);">
-                <div class="content source active">
-                  <span class="text">hi, i'm sharla! i'm a freelance developer specializing in data science workflows and data visualization, and i dabble in front-end dev (can you tell)? i mostly use R, and love open source.</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="column width-forty-five">
@@ -205,18 +188,75 @@
             </div>
             <div class="desktop-icon-filename">other projects</div>
           </div>
-          <div style="margin-bottom: 10px;">
+
+          <div class="modal" id="other-projects-modal">
+            <div class="modal-content">
+              <div class="window-top browser-top">
+                <div class="dots">
+                  <div class="dot-exit">
+                    <span class="dot exit" onClick="closeModal('other-projects')"></span>
+                  </div>
+                </div>
+                <span class="window-title">other projects</span>
+              </div>
+              <div class="window browser" style="background-color: white;">
+                <div class="content source active">
+                  <span class="text"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 10px;" id="blog-posts" onclick="openModal('blog-posts')">
             <div class="window desktop-icon">
               <div class="desktop-icon-text">TXT</div>
             </div>
             <div class="desktop-icon-filename">blog posts</div>
           </div>
-          <div style="margin-bottom: 10px;">
+
+          <div class="modal" id="blog-posts-modal">
+            <div class="modal-content">
+              <div class="window-top browser-top">
+                <div class="dots">
+                  <div class="dot-exit">
+                    <span class="dot exit" onClick="closeModal('blog-posts')"></span>
+                  </div>
+                </div>
+                <span class="window-title">blog posts</span>
+              </div>
+              <div class="window browser" style="background-color: white;">
+                <div class="content source active">
+                  <span class="text"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 10px;" id="talks" onclick="openModal('talks')">
             <div class="window desktop-icon">
               <div class="desktop-icon-text">TXT</div>
             </div>
             <div class="desktop-icon-filename">talks</div>
           </div>
+
+          <div class="modal" id="talks-modal">
+            <div class="modal-content">
+              <div class="window-top browser-top">
+                <div class="dots">
+                  <div class="dot-exit">
+                    <span class="dot exit" onClick="closeModal('talks')"></span>
+                  </div>
+                </div>
+                <span class="window-title">talks</span>
+              </div>
+              <div class="window browser" style="background-color: white;">
+                <div class="content source active">
+                  <span class="text"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

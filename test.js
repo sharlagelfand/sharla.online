@@ -87,9 +87,10 @@ function toggleTheme() {
 
 // Open modals
 function openModal(modalName) {
-  document.getElementById("other-projects-modal").style.display = "block";
+  document.getElementById(modalName.concat("-modal")).style.display = "block";
 }
 
+// Close modals
 function closeModal(modalName) {
-  document.getElementById("other-projects-modal").style.display = "none";
+  document.getElementById(modalName.concat("-modal")).style.display = "none";
 }
