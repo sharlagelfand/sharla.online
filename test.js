@@ -5,7 +5,6 @@ document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
 // Tabbing:
 // Source: https://www.w3schools.com/howto/howto_js_tabs.asp
 function openTab(evt, tabName) {
-  
   // Get all elements with class="tabcontent" and hide them, also remove the active class
   var tabcontent = document.getElementsByClassName("tabcontent");
   for (var i = 0; i < tabcontent.length; i++) {
@@ -21,7 +20,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "inline";
   document.getElementById(tabName).className += " active";
   evt.currentTarget.className += " active";
-  
+
   // If the window is minimized, open it
   var parentDivId = document.getElementById(tabName).parentElement.id;
   var parentDiv = document.getElementById(parentDivId);
@@ -32,10 +31,9 @@ function openTab(evt, tabName) {
 
 // Minimize window on click
 function minimizeWindow(windowName) {
-  
   var window = document.getElementById(windowName);
   var content = window.querySelector(".content.active");
-  
+
   if (window.style.height != "0px") {
     window.style.height = "0px";
     content.style.display = "none";
@@ -49,11 +47,11 @@ function minimizeWindow(windowName) {
 
 // Maximinize window on click
 function maximizeWindow(windowName) {
-  
   var window = document.getElementById(windowName);
   var content = window.querySelector(".content.active");
 
-  if (window.style.height === "0px") { // If minimized, make the content visible again
+  if (window.style.height === "0px") {
+    // If minimized, make the content visible again
     window.style.height = "";
     content.style.display = "";
   } else if (window.style.paddingBottom != "50px") {
@@ -72,32 +70,25 @@ function toggleTheme() {
   var iconLight = document.getElementById("theme-icon-to-light");
   var iconDark = document.getElementById("theme-icon-to-dark");
 
-  if (document.documentElement.className === 'theme-dark'){
-    setTheme('theme-light');
+  if (document.documentElement.className === "theme-dark") {
+    setTheme("theme-light");
     iconLight.style.display = "none";
     iconDark.style.display = "inline";
   } else {
-    setTheme('theme-dark');
+    setTheme("theme-dark");
     iconLight.style.display = "inline";
     iconDark.style.display = "none";
   }
 }
 // Set initial theme on load
 (function () {
-  setTheme('theme-dark');
+  setTheme("theme-dark");
 })();
 
 // Open modals
 function openModal(modalName) {
   document.getElementById("other-projects-modal").style.display = "block";
 }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
 
 function closeModal(modalName) {
   document.getElementById("other-projects-modal").style.display = "none";

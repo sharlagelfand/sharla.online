@@ -28,100 +28,16 @@
       </div>
       <div class="columns">
         <div class="column width-forty">
-          <div id = "window-about">
-          <div class="window-top browser-top">
-            <div class="dots">
-              <div class="dot-exit">
-                <span class="dot exit"></span><span class="tooltip">no :)</span>
-              </div>
-              <span class="dot minimize" onclick="minimizeWindow('about')"></span>
-              <span class="dot full" onclick="maximizeWindow('about')"></span>
-            </div>
-            <span class="window-title">Untitled</span>
-          </div>
-          <div class="window browser" id="about" style="background-color: rgba(255, 255, 255, 0.75);">
-            <div class="content source active">
-              <span class="text">hi, i'm sharla! i'm a freelance developer specializing in data science workflows and data visualization, and i dabble in front-end dev (can you tell)? i mostly use R, and love open source.</span>
-            </div>
-          </div>
-        </div>
-
-        <div id = "window-opendatatoronto">
-          <div class="window-top rstudio-top">
-            <div class="dots">
-              <div class="dot-exit">
-                <span class="dot exit"></span><span class="tooltip">no :)</span>
-              </div>
-              <span class="dot minimize" onclick="minimizeWindow('opendatatoronto')"></span>
-              <span class="dot full" onclick="maximizeWindow('opendatatoronto')"></span>
-            </div>
-            <span class="window-title">opendatatoronto.R</span>
-          </div>
-          <div class="window rstudio" id="opendatatoronto">
-            <div class="content source active">
-              <div class="rstudio-content">
-                <div>
-                  <span class="line-number">1</span><span class="comment"> # the {opendatatoronto} R package interfaces with the city of toronto's open data portal</span><br>
-                </div>
-                <div>
-                  <span class="line-number">2</span><span class="comment"> # learn more: <a href="https://sharlagelfand.github.io/opendatatoronto" target="_blank" class="long-url">sharlagelfand.github.io/opendatatoronto</a></span>
-                </div>
-                <div><span class="line-number">3</span><br></div>
-                <div>
-                  <span class="long-url"> <span class="line-number">4</span> install.packages<span class="parentheses">(</span><span class="string">"opendatatoronto"</span><span class="parentheses">)</span></span>
-                </div>
-                <div><span class="line-number">5</span><br></div>
-                <div>
-                  <span class="line-number">6</span><span class="library"> library</span><span class="parentheses">(</span>opendatatoronto<span class="parentheses">)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id = "window-mermaidr">
-          <div class="window-top rstudio-top">
-            <div class="dots">
-              <div class="dot-exit">
-                <span class="dot exit"></span><span class="tooltip">no :)</span>
-              </div>
-              <span class="dot minimize" onclick="minimizeWindow('mermaidr')"></span>
-              <span class="dot full" onclick="maximizeWindow('mermaidr')"></span>
-            </div>
-            <span class="window-title">mermaidr.R</span>
-          </div>
-          <div class="window rstudio" id="mermaidr">
-            <div class="source content active">
-              <div class="rstudio-content">
-                <div>
-                  <span class="line-number">1</span><span class="comment"> #
-                    {mermaidr} is an R package that enables you to access data from <a href="https://datamermaid.org/" target="_blank">MERMAID</a>, an open-source data platform developed to help collect, analyze, and share coral reef monitoring data</span>
-                </div>
-                <div>
-                  <span class="line-number">2</span><span class="comment"> # learn more: <a href="https://github.com/data-mermaid/mermaidr" target="_blank" class="long-url">github.com/data-mermaid/mermaidr</a></span>
-                </div>
-                <div>
-                  <span class="long-url"> <span class="line-number">3</span> devtools<span class="library">::</span>install_github<span class="parentheses">(</span><span class="string">"data-mermaid/mermaidr"</span><span class="parentheses">)</span></span>
-                </div>
-                <div>
-                  <span class="line-number">4</span><br>
-                </div>
-                <div>
-                  <span class="line-number">5</span><span class="library"> library</span><span class="parentheses">(</span>mermaidr<span class="parentheses">)</span><br>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class = "modal" id = "other-projects-modal">
-            <div class = "modal-content">
+          <div id="window-about">
             <div class="window-top browser-top">
               <div class="dots">
                 <div class="dot-exit">
-                  <span class="dot exit" onClick = "closeModal('other-projects')"></span>
+                  <span class="dot exit"></span><span class="tooltip">no :)</span>
                 </div>
+                <span class="dot minimize" onclick="minimizeWindow('about')"></span>
+                <span class="dot full" onclick="maximizeWindow('about')"></span>
               </div>
-              <span class="window-title">other projects</span>
+              <span class="window-title">Untitled</span>
             </div>
             <div class="window browser" id="about" style="background-color: rgba(255, 255, 255, 0.75);">
               <div class="content source active">
@@ -129,77 +45,161 @@
               </div>
             </div>
           </div>
-        </div>
+
+          <div id="window-opendatatoronto">
+            <div class="window-top rstudio-top">
+              <div class="dots">
+                <div class="dot-exit">
+                  <span class="dot exit"></span><span class="tooltip">no :)</span>
+                </div>
+                <span class="dot minimize" onclick="minimizeWindow('opendatatoronto')"></span>
+                <span class="dot full" onclick="maximizeWindow('opendatatoronto')"></span>
+              </div>
+              <span class="window-title">opendatatoronto.R</span>
+            </div>
+            <div class="window rstudio" id="opendatatoronto">
+              <div class="content source active">
+                <div class="rstudio-content">
+                  <div>
+                    <span class="line-number">1</span><span class="comment"> # the {opendatatoronto} R package interfaces with the city of toronto's open data portal</span><br>
+                  </div>
+                  <div>
+                    <span class="line-number">2</span><span class="comment"> # learn more: <a href="https://sharlagelfand.github.io/opendatatoronto" target="_blank" class="long-url">sharlagelfand.github.io/opendatatoronto</a></span>
+                  </div>
+                  <div><span class="line-number">3</span><br></div>
+                  <div>
+                    <span class="long-url"> <span class="line-number">4</span> install.packages<span class="parentheses">(</span><span class="string">"opendatatoronto"</span><span class="parentheses">)</span></span>
+                  </div>
+                  <div><span class="line-number">5</span><br></div>
+                  <div>
+                    <span class="line-number">6</span><span class="library"> library</span><span class="parentheses">(</span>opendatatoronto<span class="parentheses">)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="window-mermaidr">
+            <div class="window-top rstudio-top">
+              <div class="dots">
+                <div class="dot-exit">
+                  <span class="dot exit"></span><span class="tooltip">no :)</span>
+                </div>
+                <span class="dot minimize" onclick="minimizeWindow('mermaidr')"></span>
+                <span class="dot full" onclick="maximizeWindow('mermaidr')"></span>
+              </div>
+              <span class="window-title">mermaidr.R</span>
+            </div>
+            <div class="window rstudio" id="mermaidr">
+              <div class="source content active">
+                <div class="rstudio-content">
+                  <div>
+                    <span class="line-number">1</span><span class="comment"> #
+                      {mermaidr} is an R package that enables you to access data from <a href="https://datamermaid.org/" target="_blank">MERMAID</a>, an open-source data platform developed to help collect, analyze, and share coral reef monitoring data</span>
+                  </div>
+                  <div>
+                    <span class="line-number">2</span><span class="comment"> # learn more: <a href="https://github.com/data-mermaid/mermaidr" target="_blank" class="long-url">github.com/data-mermaid/mermaidr</a></span>
+                  </div>
+                  <div>
+                    <span class="long-url"> <span class="line-number">3</span> devtools<span class="library">::</span>install_github<span class="parentheses">(</span><span class="string">"data-mermaid/mermaidr"</span><span class="parentheses">)</span></span>
+                  </div>
+                  <div>
+                    <span class="line-number">4</span><br>
+                  </div>
+                  <div>
+                    <span class="line-number">5</span><span class="library"> library</span><span class="parentheses">(</span>mermaidr<span class="parentheses">)</span><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="other-projects-modal">
+            <div class="modal-content">
+              <div class="window-top browser-top">
+                <div class="dots">
+                  <div class="dot-exit">
+                    <span class="dot exit" onClick="closeModal('other-projects')"></span>
+                  </div>
+                </div>
+                <span class="window-title">other projects</span>
+              </div>
+              <div class="window browser" style="background-color: rgba(255, 255, 255, 0.75);">
+                <div class="content source active">
+                  <span class="text">hi, i'm sharla! i'm a freelance developer specializing in data science workflows and data visualization, and i dabble in front-end dev (can you tell)? i mostly use R, and love open source.</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="column width-forty-five">
 
-          <div id = "window-comics">
-          <div class="window-top browser-top">
-            <div class="dots">
-              <div class="dot-exit">
-                <span class="dot exit"></span><span class="tooltip">no :)</span>
+          <div id="window-comics">
+            <div class="window-top browser-top">
+              <div class="dots">
+                <div class="dot-exit">
+                  <span class="dot exit"></span><span class="tooltip">no :)</span>
+                </div>
+                <span class="dot minimize" onclick="minimizeWindow('comics')"></span>
+                <span class="dot full" onclick="maximizeWindow('comics')"></span>
               </div>
-              <span class="dot minimize" onclick="minimizeWindow('comics')"></span>
-              <span class="dot full" onclick="maximizeWindow('comics')"></span>
             </div>
-          </div>
-          <div class="window browser" id="comics">
-            <div class="content active">
-              <div class="toolbar">
-                <div class="url-bar">
-                  <a href="https://github.com/sharlagelfand/understanding-comics" target="_blank" class="url">github.com/sharlagelfand/understanding-comics/</a>
+            <div class="window browser" id="comics">
+              <div class="content active">
+                <div class="toolbar">
+                  <div class="url-bar">
+                    <a href="https://github.com/sharlagelfand/understanding-comics" target="_blank" class="url">github.com/sharlagelfand/understanding-comics/</a>
+                  </div>
+                </div>
+                <div class="page">
+                  <a href="https://github.com/sharlagelfand/understanding-comics" target="_blank"><img src="comic.png" alt="Understanding Comics"></a>
                 </div>
               </div>
-              <div class="page">
-                <a href="https://github.com/sharlagelfand/understanding-comics" target="_blank"><img src="comic.png" alt="Understanding Comics"></a>
-              </div>
             </div>
           </div>
-        </div>
 
-        <div id = "window-months">
-          <div class="window-top browser-top">
-            <div class="dots">
-              <div class="dot-exit">
-                <span class="dot exit"></span><span class="tooltip">no :)</span>
+          <div id="window-months">
+            <div class="window-top browser-top">
+              <div class="dots">
+                <div class="dot-exit">
+                  <span class="dot exit"></span><span class="tooltip">no :)</span>
+                </div>
+                <span class="dot minimize" onclick="minimizeWindow('months')"></span>
+                <span class="dot full" onclick="maximizeWindow('months')"></span>
               </div>
-              <span class="dot minimize" onclick="minimizeWindow('months')"></span>
-              <span class="dot full" onclick="maximizeWindow('months')"></span>
+              <div class="tabs">
+                <button class="tablink active" onclick="openTab(event, 'R')">R</button>
+                <button class="tablink" onclick="openTab(event, 'D3')">D3.js</button>
+              </div>
             </div>
-            <div class="tabs">
-              <button class="tablink active" onclick="openTab(event, 'R')">R</button>
-              <button class="tablink" onclick="openTab(event, 'D3')">D3.js</button>
-            </div>
-          </div>
-          <div class="window browser" id="months">
-            <div class="content tabcontent active" id="R" style="display: block;">
-              <div class="toolbar">
-                <div class="url-bar">
-                  <a href="https://github.com/sharlagelfand/mylifeinmonths" target="_blank" class="url">github.com/sharlagelfand/mylifeinmonths/</a>
+            <div class="window browser" id="months">
+              <div class="content tabcontent active" id="R" style="display: block;">
+                <div class="toolbar">
+                  <div class="url-bar">
+                    <a href="https://github.com/sharlagelfand/mylifeinmonths" target="_blank" class="url">github.com/sharlagelfand/mylifeinmonths/</a>
+                  </div>
+                </div>
+                <div class="page">
+                  <a href="https://github.com/sharlagelfand/mylifeinmonths" target="_blank"><img src="life_in_months.png" alt="My Life in Months"></a>
                 </div>
               </div>
-              <div class="page">
-                <a href="https://github.com/sharlagelfand/mylifeinmonths" target="_blank"><img src="life_in_months.png" alt="My Life in Months"></a>
-              </div>
-            </div>
 
-            <div class="content tabcontent" id="D3" style="display: none;">
-              <div class="toolbar">
-                <div class="url-bar">
-                  <a href="https://observablehq.com/@sharla/my-life-in-months" target="_blank" class="url">observablehq.com/@sharla/my-life-in-months</a>
+              <div class="content tabcontent" id="D3" style="display: none;">
+                <div class="toolbar">
+                  <div class="url-bar">
+                    <a href="https://observablehq.com/@sharla/my-life-in-months" target="_blank" class="url">observablehq.com/@sharla/my-life-in-months</a>
+                  </div>
                 </div>
-              </div>
-              <div class="page">
-                <iframe height="275" frameborder="0" src="https://observablehq.com/embed/@sharla/my-life-in-months?cells=chart"></iframe>
+                <div class="page">
+                  <iframe height="275" frameborder="0" src="https://observablehq.com/embed/@sharla/my-life-in-months?cells=chart"></iframe>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
         </div>
         <div class="column width-fifteen">
-          <div style="margin-bottom: 10px;" id = "other-projects" onclick="openModal('other-projects')">
+          <div style="margin-bottom: 10px;" id="other-projects" onclick="openModal('other-projects')">
             <div class="window desktop-icon">
               <div class="desktop-icon-text">TXT</div>
             </div>
