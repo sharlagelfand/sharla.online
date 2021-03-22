@@ -408,6 +408,11 @@ a:hover {
   .tablink {
     max-width: 15vw;
   }
+
+  .logos img {
+    height: 32px;
+    width: 32px;
+}
 }
 
 /* Sandbox */
