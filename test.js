@@ -63,22 +63,26 @@ function maximizeWindow(windowName) {
   }
 }
 
-// function to set a given theme/color-scheme
+// Set theme
 function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
   document.documentElement.className = themeName;
-}// function to toggle between light and dark theme
+}
+// Toggle theme
 function toggleTheme() {
- if (localStorage.getItem('theme') === 'theme-dark'){
-     setTheme('theme-light');
- } else {
-     setTheme('theme-dark');
- }
-}// Immediately invoked function to set the theme on initial load
+  var iconLight = document.getElementById("theme-icon-to-light");
+  var iconDark = document.getElementById("theme-icon-to-dark");
+
+  if (document.documentElement.className === 'theme-dark'){
+    setTheme('theme-light');
+    iconLight.style.display = "none";
+    iconDark.style.display = "inline";
+  } else {
+    setTheme('theme-dark');
+    iconLight.style.display = "inline";
+    iconDark.style.display = "none";
+  }
+}
+// Set initial theme on load
 (function () {
- if (localStorage.getItem('theme') === 'theme-dark') {
-     setTheme('theme-dark');
- } else {
-     setTheme('theme-light');
- }
+  setTheme('theme-dark');
 })();
