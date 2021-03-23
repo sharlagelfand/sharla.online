@@ -149,7 +149,7 @@ a:hover {
 }
 
 .width-fifteen {
-  width: calc(15% - 40px);
+  width: calc(10% - 40px);
 }
 
 /* Window panes */
@@ -402,7 +402,7 @@ a:hover {
   }
   
   .width-fifteen {
-    width: 25%;
+    width: calc(33% - 20px);
   }
   
   body {
@@ -420,11 +420,11 @@ a:hover {
   .logos img {
     height: 32px;
     width: 32px;
-}
+  }
 
-.modal-content {
-  width: 80%;
-}
+  .modal-content {
+    width: 80%;
+  }
 }
 
 /* Sandbox */
@@ -459,6 +459,14 @@ a:hover {
   height: 100%;
   background-color: rgb(255, 255, 255); /* Fallback color */
   background-color: rgba(255, 255, 255, 0.5); /* Black w/ opacity */
+}
+
+.modal-link {
+  margin-bottom: 10px;
+}
+
+.modal-link img {
+  width: 100%;
 }
 
 .modal-content {

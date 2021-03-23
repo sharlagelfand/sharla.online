@@ -1,7 +1,3 @@
-// Adding time in
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-
 // Tabbing:
 // Source: https://www.w3schools.com/howto/howto_js_tabs.asp
 function openTab(evt, tabName) {
