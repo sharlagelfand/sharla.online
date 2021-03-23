@@ -90,3 +90,14 @@ function openModal(modalName) {
 function closeModal(modalName) {
   document.getElementById(modalName.concat("-modal")).style.display = "none";
 }
+
+window.onclick = function(event) {
+  var talksModal = document.getElementById("talks-modal")
+  var otherProjectsModal = document.getElementById("other-projects-modal")
+
+  if (event.target == talksModal) {
+    talksModal.style.display = "none";
+   } else if (event.target == otherProjectsModal) {
+    otherProjectsModal.style.display = "none";
+   }
+}
