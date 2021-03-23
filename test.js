@@ -65,15 +65,21 @@ function setTheme(themeName) {
 function toggleTheme() {
   var iconLight = document.getElementById("theme-icon-to-light");
   var iconDark = document.getElementById("theme-icon-to-dark");
+  var keyboardDark = document.getElementById("keyboard-dark");
+  var keyboardLight = document.getElementById("keyboard-light");
 
   if (document.documentElement.className === "theme-dark") {
     setTheme("theme-light");
     iconLight.style.display = "none";
     iconDark.style.display = "inline";
+    keyboardDark.style.display = "none";
+    keyboardLight.style.display = "block";
   } else {
     setTheme("theme-dark");
     iconLight.style.display = "inline";
     iconDark.style.display = "none";
+    keyboardDark.style.display = "block";
+    keyboardLight.style.display = "none";
   }
 }
 // Set initial theme on load
@@ -94,11 +100,14 @@ function closeModal(modalName) {
 window.onclick = function(event) {
   var talksModal = document.getElementById("talks-modal")
   var otherProjectsModal = document.getElementById("other-projects-modal")
+  var keyboardModal = document.getElementById("keyboard-modal")
 
   if (event.target == talksModal) {
     talksModal.style.display = "none";
    } else if (event.target == otherProjectsModal) {
     otherProjectsModal.style.display = "none";
+   } else if (event.target == keyboardModal){
+     keyboardModal.style.display = "none";
    }
 }
 
@@ -106,9 +115,11 @@ document.addEventListener('keydown', (event) => {
 
   var talksModal = document.getElementById("talks-modal")
   var otherProjectsModal = document.getElementById("other-projects-modal")
+  var keyboardModal = document.getElementById("keyboard-modal")
 
   if (event.key === 'Escape') {
     otherProjectsModal.style.display = "none";
     talksModal.style.display = "none";
+    keyboardModal.style.display = "none";
   }
 })
