@@ -378,6 +378,16 @@ a:hover {
   width: 100%;
 }
 
+.modal-content .browser p {
+  hyphens: auto;
+}
+
+.modal-content .browser a {
+  font-size: 1em;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
   .computer {
