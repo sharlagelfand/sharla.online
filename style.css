@@ -421,6 +421,10 @@ a:hover {
     height: 32px;
     width: 32px;
 }
+
+.modal-content {
+  width: 80%;
+}
 }
 
 /* Sandbox */
@@ -458,7 +462,7 @@ a:hover {
 }
 
 .modal-content {
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
-  width: 40%; /* Could be more or less, depending on screen size */
+  width: 40%;
 }
