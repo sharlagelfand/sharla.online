@@ -101,3 +101,14 @@ window.onclick = function(event) {
     otherProjectsModal.style.display = "none";
    }
 }
+
+document.addEventListener('keydown', (event) => {
+
+  var talksModal = document.getElementById("talks-modal")
+  var otherProjectsModal = document.getElementById("other-projects-modal")
+
+  if (event.key === 'Escape') {
+    otherProjectsModal.style.display = "none";
+    talksModal.style.display = "none";
+  }
+})
