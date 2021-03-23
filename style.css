@@ -58,6 +58,7 @@
 body {
   color: var(--white);
   font-family: var(--font-code);
+  background-color: var(--off-white);
 }
 
 a {
@@ -83,7 +84,6 @@ a:hover {
 
 .computer {
   max-width: 1400px;
-  min-height: 1100px;
   background-color: var(--purple-dark);
   border-radius: 50px;
   margin: auto;
@@ -92,9 +92,8 @@ a:hover {
 
 .computer-screen {
   width: calc(100% - 50px);
-  min-height: 1000px;
   background-color: var(--blurple);
-  margin: auto;
+  margin: 50px;
 }
 
 .computer-toolbar {
