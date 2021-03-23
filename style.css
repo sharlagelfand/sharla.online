@@ -148,7 +148,7 @@ a:hover {
 }
 
 .width-fifteen {
-  width: calc(10% - 40px);
+  width: calc(10% - 10px);
 }
 
 /* Window panes */
