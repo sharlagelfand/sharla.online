@@ -93,6 +93,7 @@ a:hover {
 .computer-screen {
   width: calc(100% - 50px);
   background-color: var(--blurple);
+  background-image: url('clouds-small.png');
   margin: 50px;
 }
 
@@ -422,6 +423,10 @@ a:hover {
   max-width: 1000px;
 }
 
+.modal-content .browser {
+  background-color: white;
+}
+
 .modal-content .browser p {
   hyphens: auto;
 }
@@ -434,6 +439,25 @@ a:hover {
 
 .modal-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Style exceptions */
+#about {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#keyboard-modal .browser {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#keyboard-modal .browser .page {
+  margin-top: 0;
+}
+
+#keyboard-modal a {
+  text-decoration: underline;
 }
 
 /* Responsive layout */
@@ -465,7 +489,7 @@ a:hover {
   }
   
   .width-ten {
-    width: calc(33% - 20px);
+    width: calc(33% - 10px);
   }
   
   h1 {
