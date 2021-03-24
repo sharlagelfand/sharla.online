@@ -53,7 +53,7 @@
 }
 
 
-/* Fonts */
+/* Basic fonts and setup */
 
 body {
   color: var(--white);
@@ -122,10 +122,6 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.modal-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 /* Column layout */
 
 .columns {
@@ -151,7 +147,7 @@ a:hover {
   width: calc(45% - 20px);
 }
 
-.width-fifteen {
+.width-ten {
   width: calc(10% - 10px);
 }
 
@@ -206,8 +202,6 @@ a:hover {
 .exit {
   background-color: var(--color-dot-exit);
 }
-
-
 
 .tooltip {
   visibility: hidden;
@@ -381,82 +375,7 @@ a:hover {
   width: 100%;
 }
 
-.modal-content .browser p {
-  hyphens: auto;
-}
-
-.modal-content .browser a {
-  font-size: 1em;
-  color: var(--text-color);
-  text-decoration: underline;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
-  body {
-    background-color: var(--purple-dark);
-  }
-  .computer-screen {
-    margin: 10px;
-    width: 100%;
-    border-radius: 25px;
-  }
-
-  .computer-toolbar {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-
-  .column {
-    margin-right: 20px;
-  }
-  
-  .width-forty {
-    width: 100%;
-  }
-  
-  .width-forty-five {
-    width: 100%;
-  }
-  
-  .width-fifteen {
-    width: calc(33% - 20px);
-  }
-  
-  body {
-    font-size: 12px;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-
-  .tablink {
-    max-width: 15vw;
-  }
-
-  .logos img {
-    height: 32px;
-    width: 32px;
-  }
-
-  .modal-content {
-    width: 80% !important;
-  }
-
-  .modal-link {
-    float: left !important;
-    width: 33.33%
-  }
-
-  #icons-column {
-    width: 100%;
-    flex-direction: row;
-  }
-}
-
-/* Sandbox */
-
+/* Modals */
 .desktop-icon {
   background-color: var(--white);
   border: none;
@@ -501,4 +420,82 @@ a:hover {
   margin: 15% auto;
   width: 60%;
   max-width: 1000px;
+}
+
+.modal-content .browser p {
+  hyphens: auto;
+}
+
+.modal-content .browser a {
+  font-size: 1em;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.modal-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: var(--purple-dark);
+  }
+  .computer-screen {
+    margin: 10px;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .computer-toolbar {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .column {
+    margin-right: 20px;
+  }
+  
+  .width-forty {
+    width: 100%;
+  }
+  
+  .width-forty-five {
+    width: 100%;
+  }
+  
+  .width-ten {
+    width: calc(33% - 20px);
+  }
+  
+  body {
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .tablink {
+    max-width: 15vw;
+  }
+
+  .logos img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .modal-content {
+    width: 80% !important;
+  }
+
+  .modal-link {
+    float: left !important;
+    width: 33.33%
+  }
+
+  #icons-column {
+    width: 100%;
+    flex-direction: row;
+  }
 }
