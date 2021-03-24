@@ -114,6 +114,15 @@ a:hover {
   align-items: center;
 }
 
+.footer-text {
+  text-align: center;
+  margin: 5px;
+}
+
+.footer-text > a {
+  text-decoration: underline;
+}
+
 .title {
   margin-left: auto;
   margin-right: 20px;
@@ -483,6 +492,11 @@ a:hover {
   .computer-toolbar {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+  }
+
+  .computer-footer {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .column {
