@@ -93,7 +93,7 @@ a:hover {
 .computer-screen {
   width: calc(100% - 50px);
   background-color: var(--blurple);
-  background-image: url('clouds-small.png');
+  background-image: url('clouds.png');
   margin: 50px;
 }
 
