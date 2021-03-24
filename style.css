@@ -8,19 +8,23 @@
   --font-text: 'Josefin Sans', sans-serif;
 
   --window-radius: 20px;
+
+  --white: white;
+  --white-barely-opaque: rgba(255, 255, 255, 0.1);
+  --white-half-opaque: rgba(255, 255, 255, 0.5);
+  --white-mostly-opaque: rgba(255, 255, 255, 0.75);
 }
 
 /* Themes */
 
 .theme-dark {
-  --white: white;
   --off-white: #F9F8F8;
-  --purple-dark: #2c2a4a;
-  --purple-light: #4f518c;
-  --purple-light-rgba: rgba(79, 81, 140, 0.75); /* light theme todo */
-  --blurple: #6272a4;
+  --dark: #2c2a4a;
+  --light: #4f518c;
+  --light-rgba: rgba(79, 81, 140, 0.75);
+  --accent: #6272a4;
 
-  --text-color: var(--purple-dark);
+  --text-color: var(--dark);
 
   --color-dot-exit: #ff928b;
   --color-dot-minimize: #efe9ae;
@@ -30,17 +34,17 @@
   --color-code-string: #ffed66;
   --color-code-parentheses: #ed90a4;
   --color-code-line-number: #aba8b2;
-  --color-code-comment: var(--blurple);
+  --color-code-comment: var(--accent);
 }
 
 .theme-light {
-  --white: white;
   --off-white: #fff4d7;
-  --purple-dark: #C84630;
-  --purple-light: #E87B3C;
-  --blurple: #FFA7A7;
+  --dark: #C84630;
+  --light: #E87B3C;
+  --light-rgba: rgba(232,123,60, 0.75);
+  --accent: #FFA7A7;
 
-  --text-color: var(--purple-dark);
+  --text-color: var(--dark);
 
   --color-dot-exit: #FFA7A7;
   --color-dot-minimize: #FFC531;
@@ -85,7 +89,7 @@ a:hover {
 
 .computer {
   max-width: 1400px;
-  background-color: var(--purple-dark);
+  background-color: var(--dark);
   border-radius: 50px;
   margin: auto;
   display: flex;
@@ -93,14 +97,14 @@ a:hover {
 
 .computer-screen {
   width: calc(100% - 50px);
-  background-color: var(--blurple);
+  background-color: var(--accent);
   background-image: url('clouds.png');
   margin: 50px;
 }
 
 .computer-toolbar {
   width: 100%;
-  background-color: var(--purple-light-rgba);
+  background-color: var(--light-rgba);
   display: flex;
   align-items: center;
   font-family: var(--font-text);
@@ -108,7 +112,7 @@ a:hover {
 
 .computer-footer {
   width: 100%;
-  background-color: var(--purple-light-rgba);
+  background-color: var(--light-rgba);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +142,7 @@ a:hover {
 }
 
 .logos img:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--white-barely-opaque);
 }
 
 /* Column layout */
@@ -186,7 +190,7 @@ a:hover {
   border-bottom-right-radius: var(--window-radius);
   border: 5px solid;
   border-top: none;
-  background-color: var(--purple-dark);
+  background-color: var(--dark);
   word-wrap: break-word;
   margin-bottom: 10px;
   position: relative;
@@ -225,7 +229,7 @@ a:hover {
 .tooltip {
   visibility: hidden;
   width: 60px;
-  background-color: var(--blurple);
+  background-color: var(--accent);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -270,35 +274,35 @@ a:hover {
   width: 100px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border: 2px solid var(--purple-light);
+  border: 2px solid var(--light);
   background-color: transparent;
   color: var(--white);
   font-family: var(--font-code);
 }
 
 .tablink:hover, .tablink.active:hover {
-  background-color: var(--blurple);
-  border-color: var(--blurple);
+  background-color: var(--accent);
+  border-color: var(--accent);
   text-decoration: underline;
 }
 
 .tablink.active {
-  background-color: var(--purple-light);
+  background-color: var(--light);
 }
 
 /* RStudio */
 
 .rstudio-top {
-  background-color: var(--purple-light); 
+  background-color: var(--light); 
 }
 
 .rstudio {
-  border-color: var(--purple-light);
-  background-color: var(--purple-dark);
+  border-color: var(--light);
+  background-color: var(--dark);
 }
 
 .rstudio-top .dot:hover {
-  border-color: var(--purple-light);
+  border-color: var(--light);
 }
 
 .rstudio a {
@@ -339,28 +343,28 @@ a:hover {
 /* Browser */
 
 .browser-top {
-  background-color: var(--purple-dark); 
+  background-color: var(--dark); 
 }
 
 .browser {
-  border-color: var(--purple-dark);
+  border-color: var(--dark);
   background-color: var(--white);
 }
 
 .browser-top .dot:hover {
-  border-color: var(--purple-dark);
+  border-color: var(--dark);
 }
 
 .toolbar {
   width: 100%;
   height: 50px;
-  background-color: var(--purple-light);
+  background-color: var(--light);
   display: flex;
   align-items: center;
 }
 
 .url-bar {
-  background-color: var(--blurple);
+  background-color: var(--accent);
   width: 95%;
   min-height: 35px;
   margin: auto;
@@ -400,7 +404,7 @@ a:hover {
   border: none;
   border-radius: 10px;
   height: 175px;
-  color: var(--purple-dark);
+  color: var(--dark);
   position: relative;
 }
 
@@ -423,8 +427,8 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255); /* Fallback color */
-  background-color: rgba(255, 255, 255, 0.5); /* Black w/ opacity */
+  background-color: var(--white);
+  background-color: var(--white-half-opaque);
 }
 
 .modal-link {
@@ -442,7 +446,7 @@ a:hover {
 }
 
 .modal-content .browser {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .modal-content .browser p {
@@ -456,18 +460,18 @@ a:hover {
 }
 
 .modal-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--white-barely-opaque);
 }
 
 /* Style exceptions */
 #about {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--white);
+  background-color: rgba;
 }
 
 #keyboard-modal .browser {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--white);
+  background-color: var(--white-mostly-opaque);
 }
 
 #keyboard-modal .browser .page {
@@ -481,7 +485,7 @@ a:hover {
 /* Responsive layout */
 @media screen and (max-width: 1000px) {
   body {
-    background-color: var(--purple-dark);
+    background-color: var(--dark);
   }
   .computer-screen {
     margin: 10px;
