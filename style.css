@@ -469,7 +469,7 @@ a:hover {
 /* Style exceptions */
 #about {
   background-color: var(--white);
-  background-color: rgba;
+  background-color: var(--white-mostly-opaque);
 }
 
 #keyboard-modal .browser {
