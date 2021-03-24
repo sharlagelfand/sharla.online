@@ -439,6 +439,16 @@ a:hover {
   .modal-content {
     width: 80% !important;
   }
+
+  .modal-link {
+    float: left !important;
+    width: 33.33%
+  }
+
+  #icons-column {
+    width: 100%;
+    flex-direction: row;
+  }
 }
 
 /* Sandbox */
