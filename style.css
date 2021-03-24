@@ -17,6 +17,7 @@
   --off-white: #F9F8F8;
   --purple-dark: #2c2a4a;
   --purple-light: #4f518c;
+  --purple-light-rgba: rgba(79, 81, 140, 0.75);
   --blurple: #6272a4;
 
   --text-color: var(--purple-dark);
@@ -99,10 +100,18 @@ a:hover {
 
 .computer-toolbar {
   width: 100%;
-  background-color: var(--purple-light);
+  background-color: var(--purple-light-rgba);
   display: flex;
   align-items: center;
   font-family: var(--font-text);
+}
+
+.computer-footer {
+  width: 100%;
+  background-color: var(--purple-light-rgba);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
