@@ -17,7 +17,7 @@
   --off-white: #F9F8F8;
   --purple-dark: #2c2a4a;
   --purple-light: #4f518c;
-  --purple-light-rgba: rgba(79, 81, 140, 0.75);
+  --purple-light-rgba: rgba(79, 81, 140, 0.75); /* light theme todo */
   --blurple: #6272a4;
 
   --text-color: var(--purple-dark);
