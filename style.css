@@ -1,11 +1,11 @@
 /* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 /* Set variables */
 
 :root {
   --font-code: Monaco, monospace;
-  --font-text: 'Josefin Sans', sans-serif;
+  --font-text: "Josefin Sans", sans-serif;
 
   --window-radius: 20px;
 
@@ -18,7 +18,7 @@
 /* Themes */
 
 .theme-dark {
-  --off-white: #F9F8F8;
+  --off-white: #f9f8f8;
   --dark: #2c2a4a;
   --light: #4f518c;
   --light-rgba: rgba(79, 81, 140, 0.75);
@@ -28,7 +28,7 @@
 
   --color-dot-exit: #ff928b;
   --color-dot-minimize: #efe9ae;
-  --color-dot-full: #9CDE9F;
+  --color-dot-full: #9cde9f;
 
   --color-code-library: #dc6eb0;
   --color-code-string: #ffed66;
@@ -39,24 +39,23 @@
 
 .theme-light {
   --off-white: #fff4d7;
-  --dark: #C84630;
-  --light: #E87B3C;
-  --light-rgba: rgba(232,123,60, 0.75);
-  --accent: #FFA7A7;
+  --dark: #c84630;
+  --light: #e87b3c;
+  --light-rgba: rgba(232, 123, 60, 0.75);
+  --accent: #ffa7a7;
 
   --text-color: var(--dark);
 
-  --color-dot-exit: #FFA7A7;
-  --color-dot-minimize: #FFC531;
-  --color-dot-full: #ADCB00;
+  --color-dot-exit: #ffa7a7;
+  --color-dot-minimize: #ffc531;
+  --color-dot-full: #adcb00;
 
-  --color-code-library: #ADCB00;
-  --color-code-string: #FFC531;
-  --color-code-parentheses: #E87B3C;
-  --color-code-line-number: #FFA7A7;
+  --color-code-library: #adcb00;
+  --color-code-string: #ffc531;
+  --color-code-parentheses: #e87b3c;
+  --color-code-line-number: #ffa7a7;
   --color-code-comment: var(--off-white);
 }
-
 
 /* Basic fonts and setup */
 
@@ -98,7 +97,7 @@ a:hover {
 .computer-screen {
   width: calc(100% - 50px);
   background-color: var(--accent);
-  background-image: url('clouds.png');
+  background-image: url("clouds.png");
   margin: 50px;
 }
 
@@ -180,7 +179,7 @@ a:hover {
   height: 30px;
   border-top-left-radius: var(--window-radius);
   border-top-right-radius: var(--window-radius);
-  position: relative; 
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -269,7 +268,7 @@ a:hover {
   left: 80px;
 }
 
-.tablink {  
+.tablink {
   height: 27px;
   width: 100px;
   border-top-left-radius: 10px;
@@ -280,7 +279,8 @@ a:hover {
   font-family: var(--font-code);
 }
 
-.tablink:hover, .tablink.active:hover {
+.tablink:hover,
+.tablink.active:hover {
   background-color: var(--accent);
   border-color: var(--accent);
   text-decoration: underline;
@@ -293,7 +293,7 @@ a:hover {
 /* RStudio */
 
 .rstudio-top {
-  background-color: var(--light); 
+  background-color: var(--light);
 }
 
 .rstudio {
@@ -331,7 +331,8 @@ a:hover {
   color: var(--color-code-line-number);
 }
 
-.comment, .comment > a {
+.comment,
+.comment > a {
   color: var(--color-code-comment);
 }
 
@@ -343,7 +344,7 @@ a:hover {
 /* Browser */
 
 .browser-top {
-  background-color: var(--dark); 
+  background-color: var(--dark);
 }
 
 .browser {
@@ -394,7 +395,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.browser img, .browser iframe {
+.browser img,
+.browser iframe {
   width: 100%;
 }
 
@@ -506,19 +508,19 @@ a:hover {
   .column {
     margin-right: 20px;
   }
-  
+
   .width-forty {
     width: 100%;
   }
-  
+
   .width-forty-five {
     width: 100%;
   }
-  
+
   .width-ten {
     width: calc(33% - 10px);
   }
-  
+
   h1 {
     font-size: 1.25em;
   }
@@ -538,7 +540,7 @@ a:hover {
 
   .modal-link {
     float: left !important;
-    width: 33.33%
+    width: 33.33%;
   }
 
   #icons-column {
