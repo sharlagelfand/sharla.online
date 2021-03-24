@@ -432,7 +432,7 @@ a:hover {
   }
 
   .modal-content {
-    width: 80%;
+    width: 80% !important;
   }
 }
 
@@ -480,6 +480,6 @@ a:hover {
 
 .modal-content {
   margin: 15% auto;
-  padding: 20px;
-  width: 40%;
+  width: 60%;
+  max-width: 1000px;
 }
