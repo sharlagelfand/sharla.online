@@ -8,6 +8,13 @@ function closeModal(modalName) {
   document.getElementById(modalName.concat("-modal")).style.display = "none";
 }
 
+// Open a specific model based on URL parameter
+function openSpecificModal() {
+  if (window.location.search == "?2021") {
+    openModal("2021-update");
+  }
+}
+
 window.onclick = function(event) {
   var updateModal = document.getElementById("2021-update-modal")
   var talksModal = document.getElementById("talks-modal")
@@ -21,7 +28,7 @@ window.onclick = function(event) {
     otherProjectsModal.style.display = "none";
    } else if (event.target == keyboardModal){
      keyboardModal.style.display = "none";
-   } else if (event.target == keyboardModal){
+   } else if (event.target == updateModal){
      updateModal.style.display = "none";
   }
 }
