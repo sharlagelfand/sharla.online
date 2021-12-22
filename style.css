@@ -485,6 +485,18 @@ a:hover {
   text-decoration: underline;
 }
 
+#update-2021-browser {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.img-2021 {
+  width: 80% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 1000px) {
   body {
@@ -547,5 +559,13 @@ a:hover {
   #icons-column {
     width: 100%;
     flex-direction: row;
+  }
+
+  #update-2021-browser {
+    height: 90vh;
+  }
+
+  .img-2021 {
+    width: 100% !important;
   }
 }
